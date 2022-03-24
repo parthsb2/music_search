@@ -1,0 +1,33 @@
+header {
+  background: black;
+  color: #fff;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav {
+  max-width: 1000px;
+  width: 80%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header nav a {
+  display: block;
+  padding: 15px;
+
+  &:hover {
+    text-decoration: none;
+    background: #222;
+  }
+
+  &.is-active {
+    font-weight: bold;
+  }
+}

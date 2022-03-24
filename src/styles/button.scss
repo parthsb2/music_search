@@ -1,0 +1,37 @@
+button.favourite-button {
+  background: none;
+  border: none;
+  border: 2px solid #ccc;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+
+  .remove-favourite {
+    display: none;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  &.is-active {
+    background: #eaeaea;
+    border-color: transparent;
+    color: #222;
+    transition: none;
+  }
+
+  &.is-active:hover {
+    background: rgb(182, 0, 0);
+    color: #fff;
+  }
+
+  &.is-active:hover .favourite-status {
+    display: none;
+  }
+
+  &.is-active:hover .remove-favourite {
+    display: inline;
+  }
+}

@@ -1,0 +1,134 @@
+/* General styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* Specific styles */
+body {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  overflow-y: scroll;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.60),
+    rgba(0, 0, 0, 0.60)), 
+    url("../images/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100%;
+}
+
+.home-page {
+  display: flex;
+  height: 100%;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  max-width: 1000px;
+}
+
+.home-page select {
+  flex: 0.3;
+  padding: 10px;
+  border-radius: 5px;
+  color: #FFF;
+  border: 2px solid grey;
+  // border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 black;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  // background-color: transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(121, 56, 56, 0.6));
+}
+
+select:hover {
+  box-shadow: inset 400px 50px 0 0 black;
+}
+
+option {
+  color: white;
+  background-color: blue;
+  border: black 2px solid;
+
+}
+
+.home-page input {
+  flex: 0.5;
+  padding: 18px;
+  border-radius: 5px;
+  background-color: black;
+  color: #eee;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.home-page button {
+  width: 100px;
+  padding:10px;
+  border-radius: 5px;
+  color: #FFF;
+  border: 2px solid grey;
+  padding: 18px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 black;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(121, 56, 56, 0.6));
+}
+
+.home-page button:hover {
+  box-shadow: inset 400px 50px 0 0 black;
+}
